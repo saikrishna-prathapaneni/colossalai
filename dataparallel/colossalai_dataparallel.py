@@ -2,15 +2,6 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 import colossalai
-from colossalai.core import global_context as gpc
-from colossalai.utils import get_dataloader, MultiTimer
-from colossalai.trainer import Trainer, hooks
-from colossalai.nn.metric import Accuracy
-from torchvision import transforms
-from colossalai.nn.lr_scheduler import CosineAnnealingLR
-from torchvision.datasets import CIFAR10
-from colossalai.logging import get_dist_logger
-from tqdm import tqdm
 
 
 
